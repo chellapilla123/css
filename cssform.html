@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<title>document</title>
+<style>
+    body{
+        color:aliceblue;
+        background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 11%, rgba(148,187,233,1) 100%);
+font-family: monospace;
+font-size: medium;
+    }
+    fieldset{
+        width:500px;
+        align-self: middle;
+        border:3px solid rgb(128, 128, 186);
+        border-radius: 5px;
+        
+    }
+    input:required{
+        border:3px solid rgb(124, 124, 222)
+         
+    }
+    input:optional{
+        border: 2px solid green;
+    }
+    input[readonly]{
+        background-color:rgb(17, 165, 215);
+        border: dotted;
+        fornt-color:red;
+        font-weight: 900;
+        color:rgb(7, 104, 43)
+        
+        
+    }
+    select{
+        background-color: purple;
+        border-radius: 50px;
+        font-size: 20px;
+        width: 200px;
+        color: bisque;
+    }
+    input[type="radio"]:checked{
+      height: 20px;
+      width: 20px;
+    }
+    input[type="radio"]:checked+label{
+      color: brown;
+      font-size: 20px;
+    }
+
+    
+    
+</style>
+<center><h1>REGISTATION FORM</h1></center>
+<marquee behavior="scroll" direction="left"><h1>informaton is about tap academy course details personal info and course details</h1></marquee>
+  
+  <form action="">
+    
+    <fieldset>
+      <legend>personal info</legend>
+      <table>
+      <tr>
+        <td><label for="">NAME </label></td>
+        <td><input type="text" name="FN" placeholder="ex:xyz" size="15" maxlength="15" required></td>
+
+      </tr>
+      <tr>
+        <td><label for="">SURNAME</label></td>
+        <td><input type="text" placeholder="ex:c" optional></td>
+      </tr>
+      <tr>
+        <td><label for="">MOBILE NO.</label></td>
+
+        <td><INput type="tel" placeholder="EX:1234567890" required></INput></td>
+
+      </tr>
+      <tr>
+        <td><label for="">Email</label></td>
+        <td><input type="email" placeholder="ex:email@123" required></td>
+      </tr>
+      <tr>
+        <td><label for="">password</label></td>
+        <td><input type="password" required></td>
+        </tr>
+        <tr>
+          <td><label for="">conform password</label></td>
+          <td><input type="password"></td>
+        </tr>
+        <tr>
+          <td><label for="">DOB</label></td>
+          <td><input type="date"></td>
+        </tr>
+        <tr>
+          <td><label for="">gender</label></td>
+          <td><input type="radio" name="gender" value="m"><label>male</label> 
+            <input type="radio" name="gender" value="f"><label>female</label> 
+            <input type="radio" name="gender"value="o"><label for="">others</label></td>
+        </tr>
+        <tr>
+          <td><label for="">country</label></td>
+          <td> <select>
+            <option value="">india</option>
+            <option value="">others</option>
+            </select>
+
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">upload file</label></td>
+          <td><input type="file"></td>
+        </tr> 
+        <tr>
+          <td><input type="reset" required></td>
+        </tr>
+        
+      
+      </table>
+    </fieldset>
+        
+          <fieldset>
+            <table>
+          <legend>info</legend>
+          <tr>
+            <td>Date</td>
+            <td><input type="date"></td>
+          </tr>
+          <tr>
+          <td><label for="">select course</label></td>
+          <td><select>
+            <option value="">python</option>
+            <option value="">java</option>
+            <option value="">html</option>
+            <option value="">js</option>
+
+          </select></td>
+        </tr>
+        <tr>
+          <td><label for="">College Name</label></td>
+          <td><input type="text" placeholder="Priyadarshini" readonly></td>
+        </tr>
+        <tr>
+          <td><label for="">delevery mode</label></td>
+          <td><input type="checkbox" name="mode" value="on">online
+             <input type="checkbox" name="mode">offline 
+             <input type="checkbox" name="mode">hybred</td>
+             <input type="text" required>
+
+        </tr>
+        <tr>
+          <td>comments</td>
+          <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td><input type="submit" required></td>
+          </tr>
+            </table>
+  </fieldset>
+  
+</form>
+<button width="15%" height="15%"><a href="file:///C:/Users/ashwi/Documents/Frontend/form.html" download></a></button>
